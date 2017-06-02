@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 연습 10 -레이아웃 (배치)</title>
+
+<style>
+  /*float, 콘텐츠 흐름 테스트*/
+  .box{
+    width: 300px;
+    height: 200px;
+    background: lightblue;
+    opacity: 0.5;
+    margin:50px;
+  }
+
+  .box2{
+    width: 300px;
+    height: 200px;
+    background: lightblue;
+    opacity: 0.5;
+
+  }
+
+
+  .layout{
+    padding: 20px;
+    background: #ddd;
+    border: 5px solid red;
+  }
+  .float-1{
+    float:left;
+  }
+
+  .float-2{
+    float: left;
+  }
+  .paragraph{
+    background: greenyellow;
+  }
+
+  .paragraph2{
+    margin-top:50px;
+    background: greenyellow;
+  }
+
+
+  .clear-both{
+    clear:both;
+  }
+
+
+  /*가상 요소를 사용해서  float 해제하는 방식*/
+  /*가상 요소는 자식의 세로 길이 값을 인지해야 하는 부모요소에 적용*/
+  /*가상 요소는 인라인 요소*/
+
+
+  .clearfix:after{
+    content: "";
+    display:block;
+    clear:both;
+
+    /*위 세가지가 세트로 해지함*/
+  }
+
+
+
+
+</style>
+
+</head>
+
+
+<body>
+<P>
+   box 크기, 배치는 부모 요소를 기준으로 함.
+</P>
+
+<P>
+  블록 요소 box 의 가로 길이, 세로 길이를 지정하지 않았을 때,<br />
+  box 의 가로 길이는 부모 요소를 기준으로 하고 100%로 채워지는 크기가 기본 크기.<br />
+  box 의 세로 길이는 콘텐츠(자식 요소) 양 만큼 크기가  기본 크기
+</P>
+
+
+<P>
+  인라인 요소 box 의 가로 길이, 세로 길이를 지정하지 않았을 때,
+  box 의 가로 길이, 세로 길이는 콘텐츠(자식 요소)를 기준으로 콘텐츠 양 만큼 크기가  기본 크기
+</P>
+
+<span>인라인 박스스</span>
+
+<div class="layout" >
+
+  <div class="box float-1">box</div>
+  <div class="box float-2">box</div>
+   <div class="paragraph">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolores eius, excepturi facere fugiat molestiae nesciunt nobis non officia placeat, quisquam sit veniam. Autem consequuntur dolorem optio quisquam, sit sunt?
+  </div>
+
+</div>
+
+<br /><br /><br />
+
+<div class="layout" >
+
+  <div class="box float-1">box</div>
+  <div class="box float-2">box</div>
+  <div class="paragraph clear-both">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolores eius, excepturi facere fugiat molestiae nesciunt nobis non officia placeat, quisquam sit veniam. Autem consequuntur dolorem optio quisquam, sit sunt?
+  </div>
+
+</div>
+
+
+<br /><br /><br />
+
+<div class="layout" >
+
+  <div class="box2 float-1">box</div>
+  <div class="box2 float-2">box</div>
+  <div class="paragraph2 clear-both">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolores eius, excepturi facere fugiat molestiae nesciunt nobis non officia placeat, quisquam sit veniam. Autem consequuntur dolorem optio quisquam, sit sunt?
+  </div>
+
+</div>
+
+<br /><br /><br />
+
+<div class="layout" >
+  <div class="clearfix" >
+    <div class="box2 float-1">box</div>
+    <div class="box2 float-2">box</div>
+  </div>
+
+  <div class="paragraph3">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolores eius, excepturi facere fugiat molestiae nesciunt nobis non officia placeat, quisquam sit veniam. Autem consequuntur dolorem optio quisquam, sit sunt?
+  </div>
+
+</div>
+
+
+
+</body>
+
+
+</html>

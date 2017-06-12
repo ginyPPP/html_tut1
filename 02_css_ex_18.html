@@ -72,60 +72,133 @@
 
 
 
+  .b0101 {
+    width: 400px;
+    height: 100px;
+  }
+  /*.cb {
+    background:#ccc;
+    border: white solid 2px;
+    box-sizing: border-box;
+  }*/
+
+  .b01 {
+    width: 400px;
+    height: 500px;
+    display: block;
+  }
+
+  .b01:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .b010101 {
+    height: 200px;
+    width: 400px;
+    background: red;
+  }
+
 
 </style>
 
 </head>
 <body>
 
-<div class="first">
-    <section class="box1"></section>
-    <section class="box2"></section>
-    <section class="box3"></section>
-    <section class="box4"></section>
-    <div class="box">
-      <section class="box5"></section>
-      <section class="box6"></section>
-      <section class="box7"></section>
+<!--<div class="first">-->
+    <!--<section class="box1"></section>-->
+    <!--<section class="box2"></section>-->
+    <!--<section class="box3"></section>-->
+    <!--<section class="box4"></section>-->
+    <!--<div class="box">-->
+      <!--<section class="box5"></section>-->
+      <!--<section class="box6"></section>-->
+      <!--<section class="box7"></section>-->
+    <!--</div>-->
+    <!--<section class="box8"></section>-->
+    <!--<section class="box9"></section>-->
+<!--</div>-->
+
+<!--<div class="second">-->
+  <!--<section class="box10"></section>-->
+  <!--<section class="box11"></section>-->
+
+<!--</div>-->
+
+<!--<div class="third">-->
+  <!--<section class="box12"></section>-->
+  <!--<section class="box13"></section>-->
+  <!--<section class="box14"></section>-->
+  <!--<section class="box15"></section>-->
+  <!--<section class="box16"></section>-->
+  <!--<section class="box17"></section>-->
+
+
+<!--</div>-->
+
+<!--<div class="fourth">-->
+  <!--<section class="box18"></section>-->
+  <!--<section class="box19"></section>-->
+
+<!--</div>-->
+
+<!--<div class="fifth">-->
+  <!--<section class="box20"></section>-->
+  <!--<section class="box21"></section>-->
+  <!--<section class="box22"></section>-->
+  <!--<section class="box23"></section>-->
+  <!--<section class="box24"></section>-->
+  <!--<section class="box25"></section>-->
+
+
+<!--</div>-->
+
+
+
+
+
+
+
+<div class="layout w1000">
+  <div class="b01 float-left">
+    <div class="b0101 cb h100 w400 c6">01</div>
+    <div class="b010101 cb h200 w400">
+      <div class="b01010101 cb h200 w100 float-left c1">02</div>
+      <div class="b01010102 cb w300 float-left c2">
+        <div class="cb w200 h100 float-left c3">03</div>
+        <div class="cb w100 h100 float-left c4">04</div>
+        <div class="cb w100 h100 float-left c5">05</div>
+        <div class="cb w100 h100 float-left c6">06</div>
+        <div class="cb w100 h100 float-left c7">07</div>
+      </div>
     </div>
-    <section class="box8"></section>
-    <section class="box9"></section>
+    <div class="b010102 cb h100 w400 c5">05</div>
+    <div class="b010103 cb h100 w400 c6">06</div>
+  </div>
+  <div class="b02 float-left">
+    <div class="w100 h400 c1">07</div>
+    <div class="w100 h100 c2">08</div>
+  </div>
+  <div class="b03 w200 float-left">
+    <div class="w200 c3 h100">09</div>
+    <div class="w100 h100 float-left c4">10</div>
+    <div class="w100 h100 float-left c5">11</div>
+    <div class="h400 float-left c6 w100">12</div>
+    <div class="h100 float-left c3 w100">13</div>
+    <div class="h200 float-left c2 w100">14</div>
+  </div>
+  <div class="b04 w100 float-left">
+    <div class="w100 h400 c1">15</div>
+    <div class="h200 h400 c3">16</div>
+  </div>
+  <div class="b05 w200 h400 float-left">
+    <div class="w100 h100 c3 float-left">17</div>
+    <div class="w100 h100 c4 float-left">18</div>
+    <div class="w200 h200 c5 float-left">19</div>
+    <div class="w200 h100 c6 float-left">20</div>
+  </div>
 </div>
-
-<div class="second">
-  <section class="box10"></section>
-  <section class="box11"></section>
-
-</div>
-
-<div class="third">
-  <section class="box12"></section>
-  <section class="box13"></section>
-  <section class="box14"></section>
-  <section class="box15"></section>
-  <section class="box16"></section>
-  <section class="box17"></section>
-
-
-</div>
-
-<div class="fourth">
-  <section class="box18"></section>
-  <section class="box19"></section>
-
-</div>
-
-<div class="fifth">
-  <section class="box20"></section>
-  <section class="box21"></section>
-  <section class="box22"></section>
-  <section class="box23"></section>
-  <section class="box24"></section>
-  <section class="box25"></section>
-
-
-</div>
-
 
 
 </body>
